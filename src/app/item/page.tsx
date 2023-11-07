@@ -5,3 +5,5 @@ export default function Item() {
 		</main>
 	);
 }
+
+//tornar essa pasta dinâmica conforme documentação do nextjs
