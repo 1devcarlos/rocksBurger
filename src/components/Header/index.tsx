@@ -24,7 +24,7 @@ export const Header = () => {
 				</span>
 			</div>
 			<button
-				className='absolute right-6 z-40'
+				className='absolute right-6 z-50'
 				onClick={toggleMenu}>
 				<Hamburger
 					color={menuOpen ? '#000000' : '#ffffff'}
