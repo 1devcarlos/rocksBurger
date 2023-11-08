@@ -1,14 +1,39 @@
-import { Logo } from './Logo';
+'use client';
+
+import { Fade as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
+import { Modal } from '../Modal';
 
 export const Header = () => {
+	const [menuOpen, setMenuOpen] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuOpen(!menuOpen);
+	};
+
 	return (
-		<header className='container flex items-center justify-between'>
-			<div className='flex flex-col gap-2'>
-				<button>Login</button>
-				<button>Cadastro</button>
+		<header className='w-full relative flex items-center justify-center h-24 backdrop-blur-xl bg-gradient-to-b from-[#000000EB] to-[#1C1C1C2B]'>
+			<div className='flex flex-col items-center'>
+				<span className='font-notable text-4xl font-bold text-[#f4c64e]'>
+					Rocks Burger
+				</span>
+				<span className='text-xl text-white font-light tracking-[9.3px] '>
+					Rock Restaurant
+				</span>
 			</div>
-			<Logo />
-			<button> - - - </button> {/* Navbar que será aberta com algum efeito */}
+			<button
+				className='absolute right-6 z-40'
+				onClick={toggleMenu}>
+				<Hamburger
+					color={menuOpen ? '#000000' : '#ffffff'}
+					size={35}
+					toggled={menuOpen}
+				/>
+			</button>
+			<Modal
+				isOpen={menuOpen}
+				onClose={toggleMenu}
+			/>
 		</header>
 	);
 };
