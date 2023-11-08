@@ -2,7 +2,7 @@ import { Logo } from './Logo';
 
 export const Header = () => {
 	return (
-		<header className='container flex items-center justify-between bg-zinc-800 text-gray-100'>
+		<header className='container flex items-center justify-between'>
 			<div className='flex flex-col gap-2'>
 				<button>Login</button>
 				<button>Cadastro</button>

@@ -8,7 +8,7 @@ export const Logo = () => {
 				alt='logo'
 				width={100}
 				height={0}
-				className='rounded-full border-4 border-solid border-red-800'
+				className='rounded-full'
 			/>
 			<span className='font-medium text-xl'>RocksBurger</span>
 		</div>
