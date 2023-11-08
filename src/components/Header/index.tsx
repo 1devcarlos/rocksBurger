@@ -13,7 +13,7 @@ export const Header = () => {
 	};
 
 	return (
-		<header className='w-full relative flex items-center justify-center h-24 backdrop-blur-xl bg-gradient-to-b from-[#000000EB] to-[#1C1C1C2B]'>
+		<header className='fixed w-full flex items-center justify-center h-24 backdrop-blur-xl bg-gradient-to-b from-[#000000EB] to-[#1C1C1C2B]'>
 			<div className='flex flex-col items-center'>
 				<span
 					className={`${notable.className}  text-[#f4c64e] text-3xl leading-[39px]`}>
