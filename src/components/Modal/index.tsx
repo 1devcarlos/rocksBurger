@@ -1,9 +1,7 @@
 import Image from 'next/image';
 
-import { Notable } from 'next/font/google';
+import { notable } from '@/utils/notableFont';
 import Link from 'next/link';
-
-const notable = Notable({ subsets: ['latin'], weight: ['400'] });
 
 interface ModalProps {
 	isOpen: boolean;
