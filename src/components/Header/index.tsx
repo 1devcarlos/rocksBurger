@@ -3,6 +3,7 @@
 import { Fade as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 import { Modal } from '../Modal';
+import { notable } from '@/utils/notableFont';
 
 export const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -14,10 +15,11 @@ export const Header = () => {
 	return (
 		<header className='w-full relative flex items-center justify-center h-24 backdrop-blur-xl bg-gradient-to-b from-[#000000EB] to-[#1C1C1C2B]'>
 			<div className='flex flex-col items-center'>
-				<span className='font-notable text-4xl font-bold text-[#f4c64e]'>
+				<span
+					className={`${notable.className}  text-[#f4c64e] text-3xl leading-[39px]`}>
 					Rocks Burger
 				</span>
-				<span className='text-xl text-white font-light tracking-[9.3px] '>
+				<span className='text-xl text-white font-light tracking-[9.3px]'>
 					Rock Restaurant
 				</span>
 			</div>
