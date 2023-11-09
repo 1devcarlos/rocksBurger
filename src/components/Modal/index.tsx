@@ -14,7 +14,7 @@ export const Modal = ({ isOpen, onClose }: ModalProps) => {
 	};
 
 	return isOpen ? (
-		<div className='bg-yellow-500 absolute top-0 z-50 w-full h-screen transition-all duration-500 ease '>
+		<div className='bg-yellow-500 absolute top-0 z-10 w-full h-screen transition-all duration-500 ease '>
 			<div className=' flex justify-between items-center px-32 py-28'>
 				<div>
 					<Image

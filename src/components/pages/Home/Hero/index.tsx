@@ -7,7 +7,7 @@ import { RiArrowDownDoubleLine } from 'react-icons/ri';
 
 export const Hero = () => {
 	return (
-		<div className='flex flex-col w-full py-44 justify-between items-center h-screen bg-hero-bg text-[#D6D6D6]'>
+		<div className='relative flex flex-col w-full py-44 justify-between items-center h-screen bg-hero-bg text-[#ffffff]'>
 			<span
 				className={`${notable.className}  capitalize text-9xl text-[#F6DE00] mix-blend-color-dodge`}>
 				rocks ® burger
@@ -19,7 +19,7 @@ export const Hero = () => {
 					href='#destaques'
 					className='pt-16'>
 					<RiArrowDownDoubleLine
-						className='animate-bounce text-[#D6D6D6]'
+						className='animate-bounce text-[#ffffff]'
 						size={45}
 					/>
 				</Link>
