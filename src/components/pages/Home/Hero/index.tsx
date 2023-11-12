@@ -1,5 +1,3 @@
-'use client';
-
 import { notable } from '@/utils/notableFont';
 import Link from 'next/link';
 
@@ -7,7 +5,7 @@ import { RiArrowDownDoubleLine } from 'react-icons/ri';
 
 export const Hero = () => {
 	return (
-		<div className='relative flex flex-col w-full py-44 justify-between items-center h-screen bg-hero-bg text-[#ffffff]'>
+		<div className='relative flex flex-col w-full py-44 justify-between items-center h-screen bg-hero-bg bg-cover bg-center bg-no-repeat text-[#ffffff]'>
 			<span
 				className={`${notable.className}  capitalize text-9xl text-[#F6DE00] mix-blend-color-dodge`}>
 				rocks ® burger
